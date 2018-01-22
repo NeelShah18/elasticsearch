@@ -193,11 +193,6 @@
                             <!-- end col -->
                         </div>
                         <!-- end row -->
-
-                        <div class="intro2 clearfix">
-                            <p><i class="fa fa-wordpress"></i> Steps </p>
-                        </div>
-
                         <hr>
 
                         <h4>Steps</h4>
@@ -222,10 +217,18 @@
                         <!-- end row -->
 
                         <h4>List of basic quries</h4>
-                        <ol>
-                            <li>curl -XPUT 127.0.0.1:9200/(index_name)</li>
-                        </ol>
-                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                        <p>Create Index: In this section, we will add some index, mapping and data to Elasticsearch. This data will be used in the examples explained in this tutorial.</p>
+                        <div class="intro2 clearfix">
+                            <p>curl -XPUT http://localhost:9200/schools </p>
+                        </div>
+                        <p>Response: It can contain index specific settings, but for now, it is empty for default settings.</p>
+                        <div class="intro2 clearfix">
+                            <p>{"acknowledged": true}(This means index is created) </p>
+                        </div>
+                        <p>Create Mapping and Add data:Elasticsearch will auto-create the mapping according to the data provided in request body, we will use its bulk functionality to add more than one JSON object in this index.</p>
+                        <div class="intro2 clearfix">
+                            <p>curl -XPOST http://localhost:9200/schools/_bulk -d @(address-of-json-file)</p>
+                        </div>
 
                         <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#" class="btn btn-info">Ask a Question</a>
 
