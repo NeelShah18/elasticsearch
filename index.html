@@ -75,6 +75,7 @@
                             <li><a href="#line3">Query</a></li>
                             <li><a href="#line4">Multi-processing</a></li>
                             <li><a href="#line5">Server strucutre</a></li>
+                            <li><a href="#line6">FTP</a></li>
                             <li><a href="#line11">Copyright and license</a></li>
                         </ul>
                     </nav >
@@ -305,7 +306,42 @@
                         </div>
                     </section>
                     <!-- end section -->
+                    <section id="line6" class="section">
 
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">FTP  <a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <h4>Transfer file using terminals</h4>
+                        <p>HPC don't support FTP transfer, so you have to use SFTP. SFTP is by default in most of the linux distro like Ubuntu, Kubuntu</p>
+                        <p>Step 1: Login - Open terminal and type below command</p>
+                        <div class="intro2 clearfix">
+                            <p>sftp (username)@wesley.lakeheadu.ca </p>
+                        </div>
+                        <p>Now they will ask for your password, Just type it and now you are in.<br />Next step is to upload file using below command.</p>
+                        <div class="intro2 clearfix">
+                            <p>put -r (Source directory) (destination directory) <br />Make sure both directory must ahve same name- It's SFTP bug 2018-Feb-present</p>
+                        </div>
+                        <p>Now you can download any file from ftp server usig below cmmand</p>
+                        <div class="intro2 clearfix">
+                            <p>lcd (address/your_directory_name)</p>
+                        </div>
+                        <p>To download several files we can use wildcards. In this example, I will download all files with the .xls file extension.</p>
+                        <div class="intro2 clearfix">
+                            <p>mget *.xls</p>
+                        </div>
+                        <p>Closing the FTP connection.</p>
+                        <div class="intro2 clearfix">
+                            <p>exit</p>
+                        </div>
+                        <p>For more information please check: <a href="https://www.howtoforge.com/tutorial/how-to-use-ftp-on-the-linux-shell/">Click here!</a></p>
+                    </section>
+
+                    <!-- section end-->
                     <section id="line11" class="section">
 
                         <div class="row">
